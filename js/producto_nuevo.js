@@ -10,7 +10,7 @@ function guardar(){
         stock: s,
         imagen: i
     };
-    let url='http://127.0.0.1:5000/productos'
+    let url='http://127.0.0.1:5000/productos'//let url='grisseldess.pythonanywhere.com/productos'
     let options ={
         body: JSON.stringify(producto),
         method: 'POST',

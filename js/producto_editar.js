@@ -30,7 +30,7 @@ function modificar(){
         stock: s,
         imagen: i
     };
-    let url='http://127.0.0.1:5000/productos/'+id;
+    let url='http://127.0.0.1:5000/productos/'+id;// reemplazo  por la url de pythonanywhere   let url="https://grisseldess.pythonanywhere.com/productos/"+id
     let options ={
         body: JSON.stringify(producto),
         method: 'PUT',

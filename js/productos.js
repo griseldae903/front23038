@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             productos:[],
-            url:'http://127.0.0.1:5000/productos',
+            url:'http://127.0.0.1:5000/productos',  //url: 'grisseldess.pythonanywhere.com/productos',
             cargando: true,
             error: false, //por si falla la carga del servidor, inicializo en false
 
