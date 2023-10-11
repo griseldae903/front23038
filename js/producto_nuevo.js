@@ -20,12 +20,25 @@ function guardar(){
     }
     fetch(url, options)
     .then(function(){ 
-        alert("Producto agregado éxito!");
-        window.location.href = './productos.html'
+    alert("Producto agregado éxito!");
+     window.location.href = './productos.html'
+       // Swal.fire({
+        //    icon: 'success',
+          //  title: '¡Éxito!',
+           // text: 'Producto agregado exitosamente.',
+        }).then(() => {
+            window.location.href = './productos.html';
+       
+   // })
 
     })
     .catch(error => {
-        alert('No pudo agregarse el producto');
+         alert('No pudo agregarse el producto');
+        // Swal.fire({
+        //     icon: 'error',
+        //     title: 'Error',
+        //     text: 'No se pudo agregar el producto.',
+        });
         console.error(error);
-    })
+   // })
 }
